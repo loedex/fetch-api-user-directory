@@ -19,7 +19,12 @@ async function fetchEmployee() {
     
 
             const response = await fetch(api_url);
+            if(!response.ok){
+                throw new Error(`${response.status}`);
+                
+            }
             const employees_data = await response.json();
+
 
 
             container.innerHTML = ``;
@@ -27,7 +32,7 @@ async function fetchEmployee() {
              displayEmployees(employees_data);
     }catch(err){
         console.error('Error Fetching employees data',err);
-        container.innerHTML = `<p> Failed to load employees data</p>`;
+        container.innerHTML = `<div class = "w-100 text-center my-5"><p>${err}</p></div>`;
         
     }
     
