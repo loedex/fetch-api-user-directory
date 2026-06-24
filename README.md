@@ -4,13 +4,13 @@ A simple Employee Directory web app that fetches user data from a public API and
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 > Open `index.html` directly in your browser — no server setup needed!
 
 ---
 
-## 📸 Features
+## Features
 
 - Fetches real user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
 - Displays each user as a Bootstrap card showing:
@@ -32,7 +32,7 @@ A simple Employee Directory web app that fetches user data from a public API and
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -43,7 +43,7 @@ A simple Employee Directory web app that fetches user data from a public API and
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
 1. **Clone the repository**
    ```bash
@@ -64,11 +64,11 @@ A simple Employee Directory web app that fetches user data from a public API and
    start index.html
    ```
 
-> ✅ No installations or dependencies required — it runs entirely in the browser!
+> No installations or dependencies required — it runs entirely in the browser!
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 Data is sourced from the free mock API:
 
@@ -78,6 +78,6 @@ GET https://jsonplaceholder.typicode.com/users
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
