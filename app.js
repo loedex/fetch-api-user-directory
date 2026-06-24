@@ -7,11 +7,24 @@ const api_url = 'https://jsonplaceholder.typicode.com/users';
 
 async function fetchEmployee() {
     try{
-        const response = await fetch(api_url);
-        const employees_data = await response.json();
 
+        container.innerHTML = `
+            <div class = "w-100 my-5 text-center">
+                <div class = "spinner-border text-primary" role="status"></div>
+                <p class = "text-muted">Loading Employee Records</p>
+            </div>
+        `;
+        //3 second pause here 
+        await new Promise(resolve => setTimeout(resolve,3000));
+    
+
+            const response = await fetch(api_url);
+            const employees_data = await response.json();
+
+
+            container.innerHTML = ``;
         //Render cards
-        displayEmployees(employees_data);
+             displayEmployees(employees_data);
     }catch(err){
         console.error('Error Fetching employees data',err);
         container.innerHTML = `<p> Failed to load employees data</p>`;
